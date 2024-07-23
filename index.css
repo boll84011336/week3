@@ -1,0 +1,12 @@
+.container {
+
+}
+
+.header {
+    padding: 52px 312px;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+}
