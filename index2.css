@@ -36,7 +36,7 @@ img {
   padding-right: 12px;
   padding-top: 80px;
   padding-bottom: 80px;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 
 /* header */
@@ -67,9 +67,35 @@ img {
   font-size: 20px;
 }
 
+/* header sm */
+@media (max-width:576px) {
+  .nav_container {
+    flex-wrap: wrap;
+    margin: 0 -16px; /* container 的 padding 消不掉 */
+  }
+
+  .nav_container > div {
+    padding: 4px 16px 16px 16px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .navbar a {
+    width: 50%;
+    text-align: center; /* 链接文字居中 */
+    border: 1px solid #ffffff; /* 设置外框线颜色 */
+    font-size: 16px;
+    padding: 12px 0px;
+  }
+
+}
+
 /* footer */
 .footer {
-  border: 10px solid black;
+  /* border: 10px solid black; */
   background-color: var(--primary-color);
   color: #FFFFFF;
 }
@@ -120,12 +146,17 @@ img {
 
 .right ul li {
   margin-left: 36px;
+  width: 48px;
 }
 
 .copy {
   margin-top: 32px;
   display: flex;
   justify-content: space-between;
+}
+
+.server {
+  margin-left: 48px;
 }
 
 /* md footer */
@@ -138,18 +169,59 @@ img {
 /* sm footer */
 @media (max-width:576px) {
   .footer {
-    border: 10px solid forestgreen;
     background-color: var(--primary-color);
     color: #FFFFFF;
   }
 
   .container {
-    max-width: 372px;
-    padding: 24px 16px;
+    padding: 0px 16px;
   }
 
   .left nav ul {
     display: none;
+  }
+
+  .mail {
+    margin-bottom: 16px;
+  }
+
+  .phone, .mail {
+    font-size: 16px;
+  }
+  
+  .material-symbols-outlined.icon {
+    font-size: 16px;
+    margin-right: 11px;
+  }
+
+  .right ul li {
+    margin-left: 8px;
+    width: 24px;
+  }
+
+  .footer > .container {
+    padding-top: 24px;  
+    padding-bottom: 24px;
+  }
+
+  .copy {
+    font-size: 16px;
+    flex-direction: column;
+    margin-top: 16px;
+  }
+
+  .copy .right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+  }
+
+  .copy .right span {
+    padding-bottom: 8px;
+  }
+
+  .server {
+    margin-left: 0px;
   }
 }
 
