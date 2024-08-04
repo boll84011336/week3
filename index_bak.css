@@ -1,0 +1,113 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+  /* outline: solid 1px; */
+}
+
+body {
+  font-family: "Bruno Ace SC", sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1320px; /* 1296+24px 因為盒模型會把padding，也算進來導致內容不滿1296，所以要把扣掉pd的空間，加回來*/
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px; /*696 => 欄寬*12欄 + 間距*11。 然後左右有pl pr 所以加24 讓內容維持在696*/
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 372px;
+  }
+}
+/* 區塊如果加高度 內容增加就會破版 裝飾或是icon加高度的話比較不影響 不會破版就沒關係 */
+/* 像如果一個區塊的內容很多 .container就建議不要設斷點不然會被擠壓到破版 例如footer*/
+/* header footer用 */
+.container-md-fluid {
+  min-width: 1320px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+/* header footer用 */
+.container-sm-full {
+  min-width: 1320px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+
+
+.feature-list {
+  display: flex;
+  flex-wrap: nowrap; /* fwr */
+  justify-content: space-between;
+}
+
+.feature-list .card {
+  width: calc(25% - 18px); 
+  /* 因為四張卡片加起來1296 中間間距三個 所以一張卡25% 扣掉所有間距 再去/4張卡片 = 18 */
+}
+
+@media (max-width: 992px) {
+  .feature-list .card {
+    width: calc(50% - 12px);  /* 24/2 */
+  }
+}
+
+@media (max-width: 576px) {
+  .feature-list .card {
+    width: 100%;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+
+
+@media (max-width: 992px) {
+  .col-md-6 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+.col-3 {
+  width: 25%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+
+.header {
+    padding: 52px 312px;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+}
