@@ -3,7 +3,7 @@ $secondary: #650300;
 $bg-light: #f2f2f2;
 
 .banner {
-    background-image: url("../images/home-header.png");
+    background-image: url("../assets/images/home-header.png");
     background-size: cover;
     background-repeat: no-repeat;
     // height: calc(100vh - 80px);
@@ -29,14 +29,14 @@ $bg-light: #f2f2f2;
   
   @media (max-width:767px) {
     .banner {
-      background-image: url("../images/home-header-sm.png");
+      background-image: url("../assets/images/home-header-sm.png");
       height: 767px;
     }
   }
   
   @media (max-width:576px) {
     .banner {
-      background-image: url("../images/home-header-sm.png");
+      background-image: url("../assets/images/home-header-sm.png");
       .text_block {
         .h1 {
           font-size: 36px;
@@ -99,7 +99,7 @@ $bg-light: #f2f2f2;
     padding-bottom: 80px;
   }
   
-  @media (max-width:767px) {
+  @media (max-width:992px) {
     .row {
       flex-wrap: wrap;
     }
@@ -136,6 +136,15 @@ $bg-light: #f2f2f2;
       font-weight: bold;
     }
   }
+
+  @media (max-width:992px) {
+    .classic {
+      .col-md-6 {
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+  }
   
   @media (max-width:767px) {
     .classic {
@@ -156,33 +165,70 @@ $bg-light: #f2f2f2;
   
   // 聯名設計
   .design {
-    background-image: url("../images/index-bg.png");
+    background-image: url("../assets/images/index-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     .design_block {
-      .design_img1 {
-        width: 648px;
-        height: 240px;
-        background-image: url("../images/home-section4-1.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-    
-      .design_img2 {
-        width: 648px;
-        height: 240px;
-        background-image: url("../images/home-section4-2.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-      p {
-        color: $primary;
-        font-size: 48px;
-        background: #FFFFFF;
-        font-weight: bold;
+      background-position: center;
+      .image-container {
+        width: 50%; // 外層 div 控制佔據的寬度
+        .design_img1,
+        .design_img2 {
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        .design_img1 {
+          height: 240px;
+          background-image: url("../assets/images/home-section4-1.png");     
+        }
+
+        .design_img2 {
+          height: 240px;
+          background-image: url("../assets/images/home-section4-2.png");    
+        }
+
+        p {
+          color: $primary;
+          font-size: 48px;
+          background: #FFFFFF;
+          font-weight: bold;
+        }
       }
     }
     
+  }
+
+  @media (max-width:992px) {
+    .design {
+      .design_block {
+        .image-container {
+          // width: 50%; // 外層 div 控制佔據的寬度
+          .design_img1,
+          .design_img2 {
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          
+          .design_img1 {
+            height: 240px;
+            background-image: url("../assets/images/home-section4-1.png");     
+          }
+  
+          .design_img2 {
+            height: 240px;
+            background-image: url("../assets/images/home-section4-2.png");    
+          }
+  
+          p {
+            color: $primary;
+            font-size: 48px;
+            background: #FFFFFF;
+            font-weight: bold;
+          }
+        }
+      }
+    }
   }
   
   @media (max-width:767px) {
@@ -192,11 +238,30 @@ $bg-light: #f2f2f2;
         flex-wrap: wrap;
         justify-content: center;
         gap:24px;
-        .design_img1 {
-          width: 696px
-        }
-        .design_img2 {
-          width: 696px
+        .image-container {
+          width: 100%; // 外層 div 控制佔據的寬度
+          .design_img1,
+          .design_img2 {
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          
+          .design_img1 {
+            height: 240px;
+            background-image: url("../assets/images/home-section4-1.png");     
+          }
+  
+          .design_img2 {
+            height: 240px;
+            background-image: url("../assets/images/home-section4-2.png");    
+          }
+  
+          p {
+            color: $primary;
+            font-size: 48px;
+            background: #FFFFFF;
+            font-weight: bold;
+          }
         }
       }
     }
@@ -205,12 +270,7 @@ $bg-light: #f2f2f2;
   @media (max-width:576px) {
     .design {
       .design_block {
-        .design_img1 {
-          width: 348px;
-        }
-        .design_img2 {
-          width: 348px
-        }
+        
       }
     }
   }
