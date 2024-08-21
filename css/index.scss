@@ -62,7 +62,9 @@ img {
   margin: 16px 0;
 }
 
-@media (max-width:576px) {
+
+
+@media (max-width:767px) {
   .header {
     font-size: 16px;
   }
@@ -74,6 +76,10 @@ img {
   .container-sm {
     max-width: 1320px;
     flex-direction: column;
+  }
+
+  .header-sm {
+    padding: 0;
   }
 
   .logo {

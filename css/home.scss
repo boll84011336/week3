@@ -15,12 +15,12 @@ $bg-light: #f2f2f2;
       // height: calc(100vh - 80px);
       height: 787px;
       justify-content: center;
-      .h1 {
+      .banner_h1 {
         font-size: 64px;
         color: $secondary;
         font-weight: bold;
       }
-      .h2 {
+      .banner_h3 {
         font-size: 36px;
         color: $secondary;
       }
@@ -38,10 +38,10 @@ $bg-light: #f2f2f2;
     .banner {
       background-image: url("../assets/images/home-header-sm.png");
       .text_block {
-        .h1 {
+        .banner_h1 {
           font-size: 36px;
         }
-        .h2 {
+        .banner_h3 {
           font-size: 24px;
         }
       }
@@ -102,10 +102,15 @@ $bg-light: #f2f2f2;
   @media (max-width:992px) {
     .row {
       flex-wrap: wrap;
+      justify-content: center;
     }
   
     .col-md-6 {
       width: 48%
+    }
+
+    .specializ_h2_title {
+      font-size: 40px;
     }
   }
   
@@ -201,6 +206,7 @@ $bg-light: #f2f2f2;
 
   @media (max-width:992px) {
     .design {
+      background-image: url("../assets/images/index-bg-md.png");
       .design_block {
         .image-container {
           // width: 50%; // 外層 div 控制佔據的寬度
@@ -233,6 +239,7 @@ $bg-light: #f2f2f2;
   
   @media (max-width:767px) {
     .design {
+      background-image: url("../assets/images/index-bg-sm.png");
       .design_block {
         display: flex;
         flex-wrap: wrap;

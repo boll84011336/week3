@@ -11,12 +11,12 @@
   height: 787px;
   justify-content: center;
 }
-.banner .text_block .h1 {
+.banner .text_block .banner_h1 {
   font-size: 64px;
   color: #650300;
   font-weight: bold;
 }
-.banner .text_block .h2 {
+.banner .text_block .banner_h3 {
   font-size: 36px;
   color: #650300;
 }
@@ -31,10 +31,10 @@
   .banner {
     background-image: url("../assets/images/home-header-sm.png");
   }
-  .banner .text_block .h1 {
+  .banner .text_block .banner_h1 {
     font-size: 36px;
   }
-  .banner .text_block .h2 {
+  .banner .text_block .banner_h3 {
     font-size: 24px;
   }
 }
@@ -87,9 +87,13 @@
 @media (max-width: 992px) {
   .row {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .col-md-6 {
     width: 48%;
+  }
+  .specializ_h2_title {
+    font-size: 40px;
   }
 }
 @media (max-width: 576px) {
@@ -166,6 +170,9 @@
 }
 
 @media (max-width: 992px) {
+  .design {
+    background-image: url("../assets/images/index-bg-md.png");
+  }
   .design .design_block .image-container .design_img1,
   .design .design_block .image-container .design_img2 {
     background-size: cover;
@@ -187,6 +194,9 @@
   }
 }
 @media (max-width: 767px) {
+  .design {
+    background-image: url("../assets/images/index-bg-sm.png");
+  }
   .design .design_block {
     display: flex;
     flex-wrap: wrap;
