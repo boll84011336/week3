@@ -309,8 +309,6 @@ $bg-light: #f2f2f2;
     background-color: #fbf2f2;
     .contact_block {
       padding-top: 16px;
-      width: 636px;
-      margin: 0 auto;
       .form {
         label {
           display: block;
@@ -349,8 +347,12 @@ $bg-light: #f2f2f2;
     .contact {
       .contact_block {
         padding-top: 0;
-        width: 576px;
-        margin: 0 auto;
+        .form {
+          input,textarea {
+            width: 88%;
+            height: 36px;
+          }
+        }
       }
     }
   }
@@ -358,9 +360,6 @@ $bg-light: #f2f2f2;
   @media (max-width:576px) {
     .contact {
       .contact_block {
-        padding-top: 0;
-        width: 348px;
-        margin: 0 auto;
         .form {
           .check_area {
             margin-bottom: 24px;

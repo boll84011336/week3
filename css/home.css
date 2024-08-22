@@ -249,8 +249,6 @@
 }
 .contact .contact_block {
   padding-top: 16px;
-  width: 636px;
-  margin: 0 auto;
 }
 .contact .contact_block .form label {
   display: block;
@@ -285,16 +283,13 @@
 @media (max-width: 767px) {
   .contact .contact_block {
     padding-top: 0;
-    width: 576px;
-    margin: 0 auto;
+  }
+  .contact .contact_block .form input, .contact .contact_block .form textarea {
+    width: 88%;
+    height: 36px;
   }
 }
 @media (max-width: 576px) {
-  .contact .contact_block {
-    padding-top: 0;
-    width: 348px;
-    margin: 0 auto;
-  }
   .contact .contact_block .form .check_area {
     margin-bottom: 24px;
   }
