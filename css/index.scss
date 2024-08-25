@@ -94,7 +94,6 @@ img {
   .nav-item {
     width: 50%;
     font-size: 16px;
-    padding: 12px 0;
   }
 
   .header_ul {
@@ -112,6 +111,17 @@ img {
   .header_ul {
     .nav-item:nth-child(3),.nav-item:nth-child(4) {
       border-bottom: 1px solid;
+    }
+  }
+
+  .header_ul {
+    flex-wrap: wrap;
+    gap:0;
+    li {
+      a {
+        width: 100%;
+        padding: 12px 0;
+      }
     }
   }
 }

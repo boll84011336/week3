@@ -82,7 +82,6 @@ img {
   .nav-item {
     width: 50%;
     font-size: 16px;
-    padding: 12px 0;
   }
   .header_ul .nav-item:nth-child(1), .header_ul .nav-item:nth-child(2) {
     border-top: 1px solid;
@@ -93,6 +92,14 @@ img {
   }
   .header_ul .nav-item:nth-child(3), .header_ul .nav-item:nth-child(4) {
     border-bottom: 1px solid;
+  }
+  .header_ul {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .header_ul li a {
+    width: 100%;
+    padding: 12px 0;
   }
 }
 /* footer */
